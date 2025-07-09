@@ -1,0 +1,109 @@
+body {
+  font-family: "Space Grotesk", "Noto Sans", sans-serif;
+  background-color: #faf8fc;
+  margin: 0;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2.5rem;
+  border-bottom: 1px solid #ede7f3;
+  background-color: white;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #140d1c;
+}
+
+.hover-text {
+  transition: color 0.3s ease;
+}
+.hover-text:hover {
+  color: #6b21a8;
+}
+
+.main {
+  flex-grow: 1;
+  padding: 2rem 2.5rem;
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  border-radius: 1rem;
+}
+
+.timer {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 1.5rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.controls button {
+  padding: 0.5rem 1rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 9999px;
+  background-color: #ede7f3;
+  color: #140d1c;
+  transition: all 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: #6b21a8;
+  color: white;
+}
+
+.laps-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.laps-container {
+  margin-top: 1rem;
+  overflow: auto;
+  border: 1px solid #dbcfe8;
+  border-radius: 1rem;
+}
+
+.laps-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  color: #714b9b;
+}
+
+.laps-table th,
+.laps-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-top: 1px solid #dbcfe8;
+}
+
+.laps-table th {
+  background-color: #faf8fc;
+  font-weight: 600;
+  color: #140d1c;
+}

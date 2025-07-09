@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Time Tracker</title>
+  <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans:wght@400;500;700;900&display=swap" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="title">
+        <svg viewBox="0 0 48 48" class="w-4 h-4 fill-current">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z"
+          />
+        </svg>
+        <h2 class="hover-text">Time Tracker</h2>
+      </div>
+    </header>
+
+    <main class="main">
+      <div
+        class="banner"
+        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDKjTZzYusyavK2hM9CmeNeiLEnoB-SEy-EFiDENsl-RudHfS2OA-UMAfw3mSYJ8SkwsLKTqfYiETOVmK3ChF0UfBRRf264pnk-gzHB31fxWSpwESQFU6Omi_IZx5707oFVBaavKheDqoxjlPShI7bBQffKZnCpkbMnXn4O6zfsz8xxvaP5vsVWyo2hAd_q15PkX9OQ9IGvGfIvupbHNXiefmGFTFzCy0PF1PybMxzuG-MxJ7ED3YvtfMiCz1OY0aBpzLB-foqcozVs");'
+      ></div>
+
+      <h2 id="timer" class="timer hover-text">00:00:00</h2>
+
+      <div class="controls">
+        <button onclick="startTimer()">Start</button>
+        <button onclick="lapTime()">Lap</button>
+        <button onclick="stopTimer()">Stop</button>
+        <button onclick="pauseTimer()">Pause</button>
+        <button onclick="resetTimer()">Reset</button>
+      </div>
+
+      <h2 class="laps-title hover-text">Laps</h2>
+      <div class="laps-container">
+        <table class="laps-table">
+          <thead>
+            <tr>
+              <th>Lap</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody id="lapsTable"></tbody>
+        </table>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
